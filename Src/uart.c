@@ -36,6 +36,8 @@ void uart2_init(uint32_t baud_rate)
     uint32_t usart_div = (PCLK1_FREQ_HZ + (baud_rate / 2U)) / baud_rate; // Con redondeo
     USART2->BRR = usart_div;
 
+    // NO activar paridad para compatibilidad con Serial Monitor de VS Code
+
     // Habilitar Transmisor (TE) y Receptor (RE)
     USART2->CR1 |= (0x01 << 2 | 0x01 << 3);
 

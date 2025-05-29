@@ -47,8 +47,8 @@ typedef struct {
 #define HEARTBEAT_LED_PIN           5     // PA5 para LD2
 #define HEARTBEAT_LED_PORT       GPIOA // Ya conocido por el driver GPIO
 
-#define EXTERNAL_LED_PWM_PIN        6     // PA6 (TIM3_CH1)
-#define EXTERNAL_LED_PWM_PORT    GPIOA
+#define EXTERNAL_LED_PWM_PIN        4     // PA6 (TIM3_CH1)
+#define EXTERNAL_LED_PWM_PORT    GPIOB
 
 #define EXTERNAL_LED_ONOFF_PIN      7     // PA7 para emulacion de estado de puerta
 #define EXTERNAL_LED_ONOFF_PORT  GPIOA
